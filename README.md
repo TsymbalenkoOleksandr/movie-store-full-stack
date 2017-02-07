@@ -7,7 +7,7 @@ Test task for Webbylab
 1 - Clone repo
 
 ```sh
-$ git clone git@github.com:wack17s/movie-store-full-stack.git
+$ git clone https://github.com/wack17s/movie-store-full-stack.git
 ```
 
 2 - Install dependencies via [npm](https://www.npmjs.com)
