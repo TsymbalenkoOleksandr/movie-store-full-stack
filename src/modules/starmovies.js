@@ -50,7 +50,7 @@ export function fetchStarMovies(query) {
 			type: STAR_LOADING,
 		});
 
-		return axios.get(`/api/search/stars/${query}`)
+		return axios.get(`http://localhost:3001/api/search/stars/${query}`)
 			.then(response => {
 				dispatch({
 					type: STAR_SUCCESS,

@@ -46,7 +46,7 @@ export function addMovie(movie) {
 			type: ADD_MOVIES
 		});
 
-		return axios.post('/api/into/movies', movies)
+		return axios.post('http://localhost:3001/api/into/movies', movies)
 			.then(response => {
 				dispatch({
 					type: ADD_SUCCESS

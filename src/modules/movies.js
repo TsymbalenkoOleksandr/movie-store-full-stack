@@ -50,7 +50,7 @@ export function fetchMovies() {
 			type: MOVIES_LOADING,
 		});
 
-		return axios.get('/api/from/movies/')
+		return axios.get('http://localhost:3001/api/from/movies/')
 			.then(response => {
 				dispatch({
 					type: MOVIES_SUCCESS,
@@ -78,7 +78,7 @@ export function fetchSearch(query) {
 			type: MOVIES_LOADING,
 		});
 
-		return axios.get(`/api/search/title/${query}`)
+		return axios.get(`http://localhost:3001/api/search/title/${query}`)
 			.then(response => {
 				dispatch({
 					type: MOVIES_SUCCESS,
@@ -105,7 +105,7 @@ export function fetchSorted() {
 			type: MOVIES_LOADING
 		});
 
-		return axios.get('/api/sorted/from/movies')
+		return axios.get('http://localhost:3001/api/sorted/from/movies')
 			.then(response => {
 				dispatch({
 					type: MOVIES_SUCCESS,

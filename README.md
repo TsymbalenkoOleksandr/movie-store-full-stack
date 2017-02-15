@@ -10,6 +10,22 @@ Test task for Webbylab
 $ git clone https://github.com/wack17s/movie-store-full-stack.git
 ```
 
+With docker installed:
+[Docker](https://docs.docker.com/engine/installation/)
+[Docker-compose](https://docs.docker.com/compose/install/)
+
+2 - Run docker-compose build
+```sh
+$ docker-compose build
+```
+
+3 - Run docker-compose up
+```sh
+$ docker-compose up
+```
+
+Without docker:
+
 2 - Install dependencies via [npm](https://www.npmjs.com)
 ```sh
 $ npm i
@@ -17,24 +33,8 @@ $ npm i
 
 3 - Run webpack build
 ```sh
-$ npm run buildf
+$ npm run dev
 ```
-
-With docker installed:
-[Docker](https://docs.docker.com/engine/installation/)
-[Docker-compose](https://docs.docker.com/compose/install/)
-
-4 - Run docker-compose build
-```sh
-$ docker-compose build
-```
-
-5 - Run docker-compose up
-```sh
-$ docker-compose up
-```
-
-Without docker:
 
 4 - Run the [mongo](http://www.mongodb.org) database server
 ```sh
@@ -46,7 +46,8 @@ $ mongod
 $ npm run start
 ```
 
-Go to [http://localhost:3001/](http://localhost:3001/) and see what happens
+Wait for build then
+Go to [http://localhost:3000/](http://localhost:3000/) and see what happens
 
 ---
 ### Usage

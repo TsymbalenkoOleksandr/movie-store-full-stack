@@ -19,6 +19,13 @@ app.use(cookieParser());
 app.use(express.static('build'));
 app.use(busboyBodyParser({ limit: '5mb' }));
 
+//only for dev
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 const index = require('./routes/index');
 
 app.use('/', index);

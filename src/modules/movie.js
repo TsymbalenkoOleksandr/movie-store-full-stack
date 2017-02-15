@@ -60,7 +60,7 @@ export function openMovie(id) {
 			type: MOVIE_LOADING
 		});
 
-		return axios.get(`/api/from/movies/${id}`)
+		return axios.get(`http://localhost:3001/api/from/movies/${id}`)
 			.then(response => {
 				dispatch({
 					type: MOVIE_SUCCESS,
@@ -87,7 +87,7 @@ export function deleteMovie(id) {
       type: DELETE_MOVIE
     });
 
-    return axios.delete(`/api/from/movies/${id}`)
+    return axios.delete(`http://localhost:3001/api/from/movies/${id}`)
       .then(response => {
         dispatch({
           type: DELETE_SUCCESS
