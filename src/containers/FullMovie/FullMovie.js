@@ -96,13 +96,15 @@ class FullMovie extends Component {
           <p>{'Title: ' + item.title}</p>
           <p>{'Year: ' + item.year}</p>
           <p>Format: {item.format}</p>
-          <div>Stars: {item.stars.split(', ').map(item => (
-            <p key={item} >
-              <Link to={`/star/${item}`} >
-                {item}
-              </Link>
-            </p>))}
-          </div>
+          {item.stars
+            ? <div>Stars: {item.stars.split(', ').map(item => (
+                <p key={item} >
+                  <Link to={`/star/${item}`} >
+                    {item}
+                  </Link>
+                </p>))}
+              </div>
+            : null}
         </div>
       );
     };
