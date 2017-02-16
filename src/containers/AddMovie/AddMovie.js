@@ -56,6 +56,13 @@ class AddMovie extends Component {
       format: this.state.format,
       stars: this.state.stars,
     });
+    this.setState({
+      file: undefined,
+      title: undefined,
+      year: undefined,
+      format: undefined,
+      stars: undefined,
+    });
   };
 
   /**
