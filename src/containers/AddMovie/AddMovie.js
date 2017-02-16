@@ -176,7 +176,8 @@ class AddMovie extends Component {
             <form className="post-form" onSubmit={this.handleSubmitFile}>
               <input
                 onChange={this.handleFile}
-                type="file" />
+                type="file"
+                accept=".txt" />
               <button disabled={this.handleFileButton()}
                 type="submit" >Add File</button>
             </form>
